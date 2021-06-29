@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/a15138ce98.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure App</title>
+  </head>
+  <body>
+    <!-- Adventure Heading -->
+    <section class="adventure-body">
+      <span class="fab fa-bars"></span>
+      <h1>My <span>Adventure </span> List</h1>
+      <div class="alert" id="alert">
+        <h3>Learn to explore the World!</h3>
+        <span id="closeBtn" onclick="closeBtn()">&times;</span>
+      </div>
+    </section>
+
+    <section class="container"></section>
+
+    <!-- Form Input -->
+    <section class="form" id="form">
+      <form action="#">
+        <div class="form-input">
+          <input type="text" class="form-data" placeholder="Location" id="location" />
+        </div>
+        <br />
+        <div class="form-input">
+          <input type="text" class="form-data" placeholder="Landmark" id="landmark" />
+        </div>
+        <br />
+        <div class="form-input">
+          <input type="text" class="form-data" id="date" placeholder="Time of Year" />
+        </div>
+        <br />
+        <div class="form-input">
+          <input type="text" id="message" class="form-data" placeholder="Message" />
+        </div>
+        <input type="submit" value="Add" class="btn" />
+        <br />
+      </form>
+    </section>
+    <hr />
+
+    <!-- Adventure List -->
+    <section class="adventure-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Landmark</th>
+            <th>Date</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody id="adventure-list"></tbody>
+      </table>
+    </section>
+
+    <!-- Show List
+    <section class="show-list" id="show-list">
+      <p>Location: <span class="location"></span></p>
+      <p>LandMark: <span class="landmark"></span></p>
+      <p>Date: <span class="date"></span></p>
+      <p>Message: <span class="message"></span></p>
+    </section> -->
+    <script src="js/scripts.js"></script>
+    <script src="js/UI.js"></script>
+  </body>
+</html>
